@@ -7,4 +7,5 @@ describe('Test simple model operations', () => {
     it('create row', () => User.create({
         username: 'Hancock'
     }));
+    it('drop table', () => User.drop({force: true}));
 });
