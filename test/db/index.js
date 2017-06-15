@@ -1,5 +1,7 @@
 'use strict';
 
+const Sequelize = require('sequelize');
+
 const sequelize = new Sequelize('db', 'root', 'password', {
     host: 'db',
     dialect: 'mysql',
@@ -11,4 +13,4 @@ const sequelize = new Sequelize('db', 'root', 'password', {
     },
 });
 
-exports = sequelize;
+module.exports = sequelize;
